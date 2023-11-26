@@ -1,6 +1,8 @@
-import java.io.*;
+package Tugas_1;
+
 import java.net.Socket;
 import java.util.Scanner;
+import java.io.*;
 
 public class Client {
 
@@ -50,7 +52,7 @@ public class Client {
                         System.out.println(msgFromChat);
 
                     } catch (IOException e){
-                         closeEverything(socket, bufferedWriter, bufferedReader);
+                        closeEverything(socket, bufferedWriter, bufferedReader);
                     }
                 }
             }
